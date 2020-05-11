@@ -1,0 +1,33 @@
+body {
+	background: url(image/malha1-01.png);
+	background-size: 250vh;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	height: 100vh;
+}
+.menu {
+	background-color: #e6cb50;
+	padding: 10px;
+}
+.menu ul {
+	display: flex;
+	justify-content: space-around;
+}
+.menu li {
+	list-style: none;
+}
+a {
+	color: teal;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.site-title {
+	color: black;
+	text-align: center;
+}
+.site-subtitle {
+	color: teal;
+	text-align: center;
+	font-size: 18px;
+}
