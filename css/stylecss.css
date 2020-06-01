@@ -179,7 +179,7 @@ a:hover {
 	width: 640px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	object-fit: cover;
-	object-position: left bottom;
+	object-position: center;
 	transition: transform 900ms;
 }
 .img-portfolio:hover {
@@ -194,7 +194,7 @@ a:hover {
 	margin: 5px;
 }
 .contato a:hover {
-	opacity: 0.5;
+	opacity: 0.3;
 	text-decoration: none;
 }
 .email a {
@@ -210,4 +210,23 @@ a:hover {
 	padding-bottom: 0;
 	font-size: 14px;
 	text-align: center;
+}
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: #fd5d4f;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 2px;
+}
+#myBtn:hover {
+	background-color: #e1e1e1;
+	color: #000000;
 }
