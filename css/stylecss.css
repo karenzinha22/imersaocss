@@ -8,32 +8,29 @@
 font-family: 'Rajdhani', sans-serif;
 font-family: 'Raleway', sans-serif; */
 body {
-	background: url(../css/image/malha1-01.png);
-	background-size: 250vh;
+	background-image: url(../css/image/malha1-01.png);
+	background-size: auto 100vh;
 	font-family: 'Raleway', sans-serif;
 	height: 100vh;
-	font-size: 18px;
+	font-size: 14px;
 }
 /* se a tela tiver pelo menos 400px vai carregar estes estilos */
-@media (min-width: 300px) {
+@media (min-width: 400px) {
 	body {
 		font-size: 14px;
 	}
 }
-
 /* breakpoint */
 @media (min-width: 600px) {
 	body {
 		font-size: 18px;
 	}
 }
-.logo img {
-	position: fixed;
-	justify-content: space-between;
-	top: 9px;
-	margin-left: 200px;
-	width: auto;
-	height: 65px;
+/* breakpoint */
+@media (min-width: 1200px) {
+	body {
+		font-size: 20px;
+	}
 }
 header {
 	height: 100vh;
@@ -41,15 +38,27 @@ header {
 	justify-content: center;
 	align-items: center;
 }
-.menu {
-	background-color: white;
+.menu-container-logo {
 	position: fixed;
-	width: 100vw;
+	background-color: white;
+	width: 100%;
 	top: 0;
+	right: 0;
+	left: 0;
+	bottom: auto;
+}
+.menu-container-logo {
+	width: 100vw;
+	z-index: 1;
+	margin-left: auto;
+	margin-right: auto;
 }
 .menu ul {
+	max-width: 940px;
 	display: flex;
-	justify-content: space-evenly;
+	float: right;
+	position: relative;
+	margin-right: 70px;
 }
 .menu li {
 	list-style: none;
@@ -58,56 +67,105 @@ header {
 }
 .menu a {
 	display: block;
-	padding: 30px 20px;
+	padding: 30px;
+	transition: background-color 1s, color 1s;
 }
 a {
 	color: #fd5d4f;
 	text-decoration: none;
 	font-family: 'Rajdhani', sans-serif;
-	font-size: 1.3em;
+	font-size: 1.5em;
+}
+.logo img {
+	position: absolute;
+	vertical-align: middle;
+	display: inline-block;
+	padding: 0;
+	top: 9px;
+	width: auto;
+	height: 65px;
+}
+.logo {
+	padding-left: 40px;
+	float: left;
 }
 a:hover {
 	text-decoration: none;
-	color: #003663;
+	color: #000000;
+}
+.text-title-box {
+	position: absolute;
+	padding: 1.35rem;
+	margin-left: auto;
+	width: 80%;
+	word-wrap: break-word;
+	line-height: 1.8em;
 }
 .site-title {
-	color: black;
 	text-align: left;
 	font-family: 'Raleway', sans-serif;
-	font-size: 4em;
+	font-weight: 700;
+	font-size: 3.5em;
+	line-height: 1em;
 }
 .site-subtitle {
-	color: #fd5d4f;
 	text-align: left;
-	font-family: 'Rajdhani', sans-serif;
-	font-size: 2em;
-	line-height: 2.5em;
+	color: #686868;
+	font-family: 'Raleway';
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	font-size: 1.2em;
+	line-height: 1.5;
 }
-.background-portfolio {
-	background-color: #fd5d4f;
-	padding: 2.8em;
+.grid-row {
+	align-items: flex-start;
 }
-.portfolio {
-	padding: 2em;
-	height: 100vh;
+.links-social {
+	display: relative;
+	padding: 0;
+	font-size: 1.1em;
+	text-decoration: none;
+	z-index: auto;
+	margin-right: 50px;
+}
+.background-portfolio-1 {
+	position: relative;
+	overflow: visible;
+	width: 100%;
+	background-color: #003663;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	min-height: 100vh;
+}
+.content-padding-1 {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	padding-left: 5rem;
+	padding-right: 5rem;
 }
 .portfolio h2 {
-	color: black;
-	font-size: 2.5em;
 	font-family: 'Rajdhani', sans-serif;
+	text-align: center;
+	color: white;
+	margin-bottom: 0;
+	padding: 0;
+	font-size: 2em;
+	font-weight: 900;
+	word-wrap: break-word;
 }
 .portfolio .grid {
 	display: grid;
-	gap: 2em;
+	gap: 6em;
 }
-@media (min-width: 500px) {
+@media (min-width: 560px) {
 	.portfolio .grid {
-		grid-template-columns: 280px 280px;
+		grid-template-columns: 240px 240px;
 	}
 }
 @media (min-width: 880px) {
 	.portfolio .grid {
-		grid-template-columns: repeat(3 280px);
+		grid-template-columns: repeat(3, 260px);
 		align-content: center;
 		justify-content: center;
 		height: calc(100vh - 8em - 48px);
@@ -115,12 +173,41 @@ a:hover {
 }
 .portfolio figure {
 	text-align: center;
-	font-size: 1.5em;
 }
 .img-portfolio {
-	width: 280px;
-	height: 180px;
+	height: 280px;
+	width: 640px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	object-fit: cover;
-	object-position: center;
-	border-radius: 3px;
+	object-position: left bottom;
+	transition: transform 900ms;
+}
+.img-portfolio:hover {
+	transform: scale(1.2);
+}
+.contato .icons {
+	text-align: center;
+}
+.contato a {
+	color: black;
+	font-size: 1.5em;
+	margin: 5px;
+}
+.contato a:hover {
+	opacity: 0.5;
+	text-decoration: none;
+}
+.email a {
+	position: static;
+	text-align: center;
+	font-size: 1em;
+}
+.text-block {
+	position: static;
+	margin-top: 0;
+	margin-left: 9px;
+	padding-top: 5px;
+	padding-bottom: 0;
+	font-size: 14px;
+	text-align: center;
 }
