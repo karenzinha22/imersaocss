@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Karen Dinalli</title>
+    <link rel="stylesheet" href="css/stylecss.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Rajdhani:wght@400;500;600;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/adde48dcdc.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <header>
+    <div class="menu-container-logo">
+    <nav class="menu">
+      <div class="nav-menu">
+        <ul>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="index.html">WORK</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+        <div class="logo"><img src="css/image/Logo_Final-K-03.png"/>
+        </div>
+    </nav>
+  </div>
+    <div class="text-title-box-about">
+        <h1 class="about-first">
+          <span style="color: #fd5d4f;">
+          Hola</span>
+          <br></h1>
+         <h2 class="about-second">I'm a designer from Brazil 
+          <br>
+          with focus in Digital Experiences.<br>
+          <br>I try to be versatile within my field,<br>by doing different types of projects<br>
+          with an interest in
+          create and support<br> brands to stick out between the mess.<br>
+          <br>My job is about listening, thinking, <br>inspiring, learning and I love that.<br>
+          <br>
+          <br>
+        </h2>
+  </div>
+  </div>
+  </header>
+  <div class="content_footer">
+    <div class="contato" id="contato">
+      <div class="grid icons">
+        <a target="_blank" href="https://github.com/karenzinha22">
+          <i class="fab fa-github"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/karenmedrano/">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a target="_blank" href="https://www.behance.net/karenmedrano">
+          <i class="fab fa-behance"></i>
+        </a>
+        <a target="_blank" href="https://twitter.com/karendinalli">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <div class="text-block">2020 © Karen Dinalli All rights reserved</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+       
+</body>
+</html>
