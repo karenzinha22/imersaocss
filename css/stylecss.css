@@ -8,7 +8,7 @@
 font-family: 'Rajdhani', sans-serif;
 font-family: 'Raleway', sans-serif; */
 body {
-	background-color: white;
+	background-image: url('../css/image/kaka-32.png');
 	background-size: auto 100vh;
 	font-family: 'Raleway', sans-serif;
 	height: 100vh;
@@ -17,13 +17,15 @@ body {
 /* se a tela tiver pelo menos 400px vai carregar estes estilos */
 @media (min-width: 400px) {
 	body {
-		font-size: 14px;
+		font-size: 12px;
 	}
 }
 /* breakpoint */
 @media (min-width: 600px) {
 	body {
-		font-size: 18px;
+		background-attachment: fixed;
+		background-size: cover;
+		font-size: 16px;
 	}
 }
 /* breakpoint */
@@ -95,37 +97,53 @@ a:hover {
 }
 .text-title-box {
 	position: absolute;
-	padding: 3rem;
+	top: 130px;
+	padding: 4rem;
 	margin-left: auto;
 	width: 80%;
 	word-wrap: break-word;
-	line-height: 1.5em;
+	line-height: 1.1em;
 }
 .site-title {
 	text-align: left;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 800;
 	font-size: 4em;
-	line-height: 1em;
+	line-height: 1.1em;
 }
 .site-subtitle {
 	text-align: left;
 	color: black;
 	font-family: 'Raleway';
 	font-weight: 400;
-	font-size: 1.8em;
-	line-height: 1.3em;
+	font-size: 1.6em;
+	line-height: 1.2em;
 }
 .grid-row {
 	align-items: flex-start;
 }
+.social-style-1 {
+	padding-top: 3.5rem;
+}
 .links-social {
 	display: relative;
 	padding: 0;
-	font-size: 1.1em;
+	font-size: 1.5em;
 	text-decoration: none;
 	z-index: auto;
-	margin-right: 50px;
+	margin-right: 40px;
+}
+.work .grid {
+	display: grid;
+}
+.work {
+	min-height: 100vh;
+}
+.img-portfolio {
+	height: 180px;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
 }
 .background-portfolio-1 {
 	position: relative;
@@ -172,7 +190,6 @@ a:hover {
 }
 .portfolio .grid {
 	display: grid;
-	gap: 6em;
 }
 @media (min-width: 560px) {
 	.portfolio .grid {
@@ -192,7 +209,7 @@ a:hover {
 }
 .img-portfolio {
 	height: 280px;
-	width: 640px;
+	width: 800px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	object-fit: cover;
 	object-position: center;
@@ -248,21 +265,12 @@ a:hover {
 	color: #000000;
 }
 /* Contact */
-
-.text-title-box-contact {
-	position: absolute;
-	padding: 3rem;
-	margin-left: auto;
-	width: 80%;
-	word-wrap: break-word;
-	line-height: 1em;
-}
 .site-title-contact {
 	text-align: left;
 	font-family: 'Raleway', sans-serif;
-	font-weight: 700;
+	font-weight: 800;
 	font-size: 4em;
-	line-height: 1em;
+	line-height: 1.1em;
 }
 .site-title-contact a {
 	text-decoration: #fd5d4f;
@@ -270,7 +278,7 @@ a:hover {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	font-size: 1em;
-	line-height: 1em;
+	line-height: 1.1em;
 }
 .site-title-contact a:hover {
 	text-decoration: black;
@@ -282,49 +290,10 @@ a:hover {
 	color: black;
 	font-family: 'Raleway';
 	font-weight: 400;
-	padding: 0;
-	margin: 0;
 	font-size: 1.8em;
-	line-height: 3em;
+	line-height: 1.1em;
 }
 .grid-row {
 	align-items: flex-start;
 }
-.links-social-contact {
-	color: #fd5d4f;
-	font-family: 'Rajdhani';
-	font-weight: 800;
-	display: relative;
-	padding: 0;
-	font-size: 1.1em;
-	text-decoration: none;
-	z-index: auto;
-	margin-right: 50px;
-}
-/* About */
-.text-title-box-about {
-	position: absolute;
-	padding: 3rem;
-	margin-left: auto;
-	margin-top: 200px;
-	width: 80%;
-	word-wrap: break-word;
-	line-height: 2.5em;
-}
-.about-first {
-	text-align: left;
-	text-decoration: #fd5d4f;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 700;
-	font-size: 4em;
-	line-height: 2em;
-}
-.about-second {
-	text-align: left;
-	color: black;
-	font-family: 'Raleway';
-	font-weight: 400;
-	font-size: 1.6em;
-	line-height: 1.2em;
-	width: 80%;
-}
+/* about */
