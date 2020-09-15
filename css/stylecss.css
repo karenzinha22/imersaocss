@@ -12,7 +12,7 @@ body {
 	background-size: auto 100vh;
 	font-family: 'Raleway', sans-serif;
 	height: 100vh;
-	font-size: 14px;
+	font-size: 13px;
 }
 /* se a tela tiver pelo menos 400px vai carregar estes estilos */
 @media (min-width: 400px) {
@@ -25,13 +25,13 @@ body {
 	body {
 		background-attachment: fixed;
 		background-size: cover;
-		font-size: 16px;
+		font-size: 14px;
 	}
 }
 /* breakpoint */
 @media (min-width: 1200px) {
 	body {
-		font-size: 20px;
+		font-size: 16px;
 	}
 }
 header {
@@ -73,7 +73,7 @@ header {
 	transition: background-color 1s, color 1s;
 }
 a {
-	color: #fd5d4f;
+	color: #000000;
 	text-decoration: none;
 	font-family: 'Rajdhani', sans-serif;
 	font-size: 1.5em;
@@ -93,7 +93,7 @@ a {
 }
 a:hover {
 	text-decoration: none;
-	color: #000000;
+	color: #fd5d4f;
 }
 .text-title-box {
 	position: absolute;
@@ -163,7 +163,7 @@ a:hover {
 .portfolio h2 {
 	font-family: 'Rajdhani', sans-serif;
 	text-align: center;
-	color: white;
+	color: #fd5d4f;
 	margin-bottom: 0;
 	padding: 0;
 	font-size: 2em;
@@ -174,7 +174,7 @@ a:hover {
 	position: relative;
 	overflow: visible;
 	width: 100%;
-	background-color: black;
+	background-color: #ffffff;
 	padding-top: 1em;
 	padding-bottom: 1em;
 	min-height: 100vh;
@@ -183,7 +183,7 @@ a:hover {
 	position: relative;
 	overflow: visible;
 	width: 100%;
-	background-color: #e1e1e1;
+	background-color: #003663;
 	padding-top: 1em;
 	padding-bottom: 1em;
 	min-height: 100vh;
