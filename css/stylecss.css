@@ -8,24 +8,35 @@
 font-family: 'Rajdhani', sans-serif;
 font-family: 'Raleway', sans-serif; */
 body {
-	background-image: url('../css/image/kaka-32.png');
+	background-image: url('../css/image/Karen.site-2.2.png');
 	background-size: auto 100vh;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', 'sans-serif';
 	height: 100vh;
-	font-size: 13px;
+	font-weight: 500;
 }
-/* se a tela tiver pelo menos 400px vai carregar estes estilos */
-@media (min-width: 400px) {
-	body {
-		font-size: 12px;
+h1,
+h2,
+h3 {
+	margin: 0;
+	font-family: 'Rajdhani', 'sans-serif';
+	font-size: ;
+}
+@media only screen and (max-width: 800px) {
+	/* For tablets: */
+	.main {
+		width: 80%;
+		padding: 0;
+	}
+	.right {
+		width: 100%;
 	}
 }
-/* breakpoint */
-@media (min-width: 600px) {
-	body {
-		background-attachment: fixed;
-		background-size: cover;
-		font-size: 14px;
+@media only screen and (max-width: 400px) {
+	/* For mobile phones: */
+	.menu,
+	.main,
+	.right {
+		width: 100%;
 	}
 }
 /* breakpoint */
@@ -36,6 +47,7 @@ body {
 }
 header {
 	height: 100vh;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -50,10 +62,19 @@ header {
 	bottom: auto;
 }
 .menu-container-logo {
-	width: 100vw;
+	width: 100%;
 	z-index: 1;
 	margin-left: auto;
 	margin-right: auto;
+}
+.menu a {
+	display: block;
+	padding: 30px;
+	transition: background-color 1s, color 1s;
+	color: #212529;
+	text-decoration: none;
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 1.5em;
 }
 .menu ul {
 	max-width: 940px;
@@ -64,19 +85,8 @@ header {
 }
 .menu li {
 	list-style: none;
-	font-size: 14px;
+	font-size: 0.8em;
 	font-family: 'Raleway', sans-serif;
-}
-.menu a {
-	display: block;
-	padding: 30px;
-	transition: background-color 1s, color 1s;
-}
-a {
-	color: #000000;
-	text-decoration: none;
-	font-family: 'Rajdhani', sans-serif;
-	font-size: 1.5em;
 }
 .logo img {
 	position: absolute;
@@ -93,14 +103,14 @@ a {
 }
 a:hover {
 	text-decoration: none;
-	color: #fd5d4f;
+	color: #fa5252;
 }
 .text-title-box {
 	position: absolute;
 	top: 130px;
 	padding: 4rem;
 	margin-left: auto;
-	width: 80%;
+	width: 90%;
 	word-wrap: break-word;
 	line-height: 1.1em;
 }
@@ -113,7 +123,7 @@ a:hover {
 }
 .site-subtitle {
 	text-align: left;
-	color: black;
+	color: #212529;
 	font-family: 'Raleway';
 	font-weight: 400;
 	font-size: 1.6em;
@@ -121,6 +131,12 @@ a:hover {
 }
 .grid-row {
 	align-items: flex-start;
+}
+a {
+	color: #212529;
+	text-decoration: none;
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 1.5em;
 }
 .social-style-1 {
 	padding-top: 3.5rem;
@@ -149,7 +165,7 @@ a:hover {
 	position: relative;
 	overflow: visible;
 	width: 100%;
-	background-color: #003663;
+	background-color: #dee2e6;
 	padding-top: 1em;
 	padding-bottom: 1em;
 	min-height: 100vh;
@@ -163,7 +179,7 @@ a:hover {
 .portfolio h2 {
 	font-family: 'Rajdhani', sans-serif;
 	text-align: center;
-	color: #fd5d4f;
+	color: #212529;
 	margin-bottom: 0;
 	padding: 0;
 	font-size: 2em;
@@ -174,7 +190,7 @@ a:hover {
 	position: relative;
 	overflow: visible;
 	width: 100%;
-	background-color: #ffffff;
+	background-color: #ff7f7f;
 	padding-top: 1em;
 	padding-bottom: 1em;
 	min-height: 100vh;
@@ -183,7 +199,7 @@ a:hover {
 	position: relative;
 	overflow: visible;
 	width: 100%;
-	background-color: #003663;
+	background-color: #dee2e6;
 	padding-top: 1em;
 	padding-bottom: 1em;
 	min-height: 100vh;
@@ -219,7 +235,7 @@ a:hover {
 	transform: scale(1.2);
 }
 .content_footer {
-	background-color: black;
+	background-color: #212529;
 	height: 15vh;
 	width: 100%;
 	margin-top: 0%;
@@ -254,7 +270,7 @@ a:hover {
 	font-size: 18px;
 	border: none;
 	outline: none;
-	background-color: #fd5d4f;
+	background-color: #fa5252;
 	color: white;
 	cursor: pointer;
 	padding: 15px;
@@ -262,7 +278,7 @@ a:hover {
 }
 #myBtn:hover {
 	background-color: #e1e1e1;
-	color: #000000;
+	color: #212529;
 }
 /* Contact */
 .site-title-contact {
@@ -273,7 +289,7 @@ a:hover {
 	line-height: 1.1em;
 }
 .site-title-contact a {
-	text-decoration: #fd5d4f;
+	text-decoration: #fa5252;
 	text-decoration-line: line-through;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
@@ -281,13 +297,13 @@ a:hover {
 	line-height: 1.1em;
 }
 .site-title-contact a:hover {
-	text-decoration: black;
-	color: #000000;
+	text-decoration: #212529;
+	color: #212529;
 	text-decoration-line: line-through;
 }
 .site-subtitle-contact2 {
 	text-align: left;
-	color: black;
+	color: #212529;
 	font-family: 'Raleway';
 	font-weight: 400;
 	font-size: 1.8em;
